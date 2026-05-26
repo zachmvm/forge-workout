@@ -1,6 +1,6 @@
 # Forge Redesign — Changes
 
-This refactor turns the original Gym-Mate scroll-form into a **3-step wizard** with a refined dark palette and an interactive anatomy picker. It keeps your existing workout-generation engine (`utils/functions.js`, `utils/swoldier.js`) **completely unchanged** — only the UI layer is new.
+This refactor turns my original Gym-Mate scroll-form into a **3-step wizard** with a refined dark palette and an interactive anatomy picker. It keeps your existing workout-generation engine (`utils/functions.js`, `utils/swoldier.js`) **completely unchanged** — only the UI layer is new.
 
 ## What changed
 
