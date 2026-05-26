@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body, #root {
+  min-height: 100%;
+  background: #0C100E;
+}
+
+body {
+  font-family: 'Inter', system-ui, sans-serif;
+  color: #E8E2D4;
+  -webkit-font-smoothing: antialiased;
+  background:
+    radial-gradient(1200px 800px at 15% 0%, rgba(212,255,58,0.045), transparent 60%),
+    radial-gradient(900px 700px at 100% 100%, rgba(120,160,90,0.04), transparent 60%),
+    #0C100E;
+  background-attachment: fixed;
+}
+
+/* Range input — lime track */
+input[type=range] {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 4px;
+  background: #2A3327;
+  border-radius: 999px;
+  outline: none;
+}
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 18px; height: 18px;
+  border-radius: 50%;
+  background: #D4FF3A;
+  border: 3px solid #0C100E;
+  box-shadow: 0 0 0 1px #D4FF3A;
+  cursor: pointer;
+  transition: transform 120ms ease;
+}
+input[type=range]::-webkit-slider-thumb:hover { transform: scale(1.1); }
+input[type=range]::-moz-range-thumb {
+  width: 14px; height: 14px;
+  border-radius: 50%;
+  background: #D4FF3A;
+  border: 3px solid #0C100E;
+  box-shadow: 0 0 0 1px #D4FF3A;
+  cursor: pointer;
+}
+
+/* Hide native scrollbar shine on dark surfaces */
+::selection { background: rgba(212,255,58,0.3); color: #E8E2D4; }
